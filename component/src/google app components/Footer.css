@@ -1,0 +1,20 @@
+.foot {
+    /* overflow: hidden; */
+    position: absolute;
+    bottom: 0; 
+    /* right: 0; */
+    margin-top: auto;
+    padding: auto;
+    background-color: rgb(216, 214, 214);
+    width: 100%;
+    color: #595454;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 980px) {
+    .bottoms {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

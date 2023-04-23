@@ -1,0 +1,10 @@
+button {
+    margin: 1rem 0.2rem;
+    padding: 0.7rem;
+}
+
+.but {
+    text-decoration: none;
+    color: grey;
+    font-weight: 700;
+}
