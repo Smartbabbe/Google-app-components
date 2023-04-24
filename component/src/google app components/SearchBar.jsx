@@ -30,7 +30,7 @@ function SearchBar() {
           <img className='imgss' src={image} alt="file icon" />
         </div>
         <div>
-        <p>{initial}</p>
+        <p style={{display: "flex", justifyContent: "center"}}>{initial}</p>
         </div>        
       </form>
 
