@@ -6,20 +6,33 @@ import search from "../Images/searchlogo.png"
 import { useState } from 'react'
 
 function SearchBar() {
-  const [initial, after] = useState("");
+  const [initial, setAfter] = useState("");
+  
+  const arrs = [];
+  
+  const submitHandle = (event) => {
+    event.preventDefault();
+    arrs.push(event.target[0].value)
+    console.log(arrs)
+    setAfter(arrs)
+  }
+
+  const newArrs = [...arrs, ] 
+
+  
   return (
     <div>
-      <div className='divv'>
+      <form onSubmit={submitHandle} className='divv'>
         <div className='searchBar'>
           <img className='search' src={search} alt='search icon' />
-          <input type='text' value={initial} onChange={(e) => {after(e.target.value)}}  name='searchBar' className='searchTextBar' />
+          <input type='text' name='searchBar' className='searchTextBar' />
           <img className='voice' src={voice} alt="voice icon" />
           <img className='imgss' src={image} alt="file icon" />
         </div>
         <div>
         <p>{initial}</p>
         </div>        
-      </div>
+      </form>
 
     </div>
   )
