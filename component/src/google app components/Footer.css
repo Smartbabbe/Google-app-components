@@ -1,12 +1,12 @@
 .foot {
-    /* overflow: hidden; */
-    position: absolute;
-    bottom: 0; 
+    overflow: hidden;
+    /* position: absolute; */
+    /* bottom: 0;  */
     /* right: 0; */
     margin-top: auto;
-    padding: auto;
+    /* padding: auto; */
     background-color: rgb(216, 214, 214);
-    width: 100%;
+    width: inherit;
     color: #595454;
     font-weight: 600;
 }
@@ -18,3 +18,15 @@
         align-items: center;
     }
 }
+
+/* @media screen and (min-width:375px) {
+    .foot {
+        width: 100%;
+        position: absolute;
+         bottom: 0;
+        left: 0;
+        margin-top: auto;
+        padding: auto;
+        font-weight: 600;
+    }
+} */

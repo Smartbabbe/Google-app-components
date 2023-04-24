@@ -1,0 +1,16 @@
+.googleapp {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width: 480px) {
+    .googleapp{
+        width: fit-content;
+        height: 100%;
+        /* height: 100vh; */
+        /* height: fit-content; */
+        /* position: absolute; */
+    }
+}
